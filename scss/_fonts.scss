@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'NewYork';
+    src: url('/assets/fonts/newyork.otf') format('opentype'); /* Corrected format */
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('/assets/fonts/futura_book-normal.ttf') format('truetype'); /* Corrected format */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Bold';
+    src: url('/assets/fonts/futura_bold.ttf') format('opentype'); /* Corrected format */
+    font-weight: normal;
+    font-style: normal;
+}

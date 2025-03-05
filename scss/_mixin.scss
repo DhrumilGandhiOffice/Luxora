@@ -1,5 +1,23 @@
+@use 'variables' as *;
+
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fonts-update-heading($size, $line-height) {
+  font-family: $primary-font;
+  font-size: $size;
+  font-weight: 400;
+  line-height: $line-height;
+  color: $black //issue in style guide of figma use Black color as it is used in design
+}
+
+@mixin fonts-update-text($family, $size, $line-height) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: 400;
+  line-height: $line-height;
+  color: $black //issue in style guide of figma use Black color as it is used in design
+}
