@@ -1,0 +1,39 @@
+@use '../variables';
+
+
+
+.carousel-auto {
+    margin: 55px 0;
+    overflow: hidden;
+    
+    .carousel-track {
+        display: flex;
+        width: 200%;
+        animation: bannermove 10s linear infinite;
+
+        .slides,
+        .slides-clone {
+            list-style: none;
+            display: flex;
+            gap: 80px;
+        
+            .carousel-image {
+                mix-blend-mode: multiply;
+                display: block;
+                width: 100%;
+            }
+        
+            margin-left: 80px;
+        }
+    }
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

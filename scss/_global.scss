@@ -1,0 +1,9 @@
+@use './variables' as *;
+
+body {
+    background-color: $body-color;
+
+    .main-container {
+        max-width: 1920px;
+    } 
+}
