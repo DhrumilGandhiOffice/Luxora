@@ -38,7 +38,7 @@ const handleScroll = function () {
     function updateHeader() {
         const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (scrollPosition > 330) {  // Check if scrolled past 300px
+        if (scrollPosition > 300) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
@@ -48,7 +48,7 @@ const handleScroll = function () {
     window.addEventListener('scroll', updateHeader);
     window.addEventListener('resize', updateHeader);
 
-    updateHeader(); // Initial check
+    updateHeader();
 };
 
 function scrollAnimation() {
