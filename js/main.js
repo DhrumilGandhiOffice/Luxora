@@ -6,7 +6,7 @@ const handleHamburger = function () {
     hamburger.addEventListener('click', (e) => {
         e.stopPropagation();
         const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-        
+
         // Toggle states
         hamburger.setAttribute('aria-expanded', !isExpanded);
         mobileMenu.classList.toggle('active');
@@ -37,7 +37,7 @@ const handleScroll = function () {
 
     function updateHeader() {
         const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         if (scrollPosition > 330) {  // Check if scrolled past 300px
             header.classList.add('scrolled');
         } else {
@@ -47,10 +47,30 @@ const handleScroll = function () {
 
     window.addEventListener('scroll', updateHeader);
     window.addEventListener('resize', updateHeader);
-    
+
     updateHeader(); // Initial check
 };
+
+function scrollAnimation() {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    document.querySelectorAll('.fade-in').forEach((element) => {
+        observer.observe(element);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     handleHamburger();
     handleScroll();
+    scrollAnimation();
 });

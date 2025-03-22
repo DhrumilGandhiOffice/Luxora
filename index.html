@@ -6,25 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luxora</title>
   <link rel="stylesheet" href="styles/main.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-  </style>
 </head>
 
 <body>
   <!-- Hero Section -->
   <section class="hero">
-    <picture>
-      <source srcset="./assets/images/banner/bannerImageMobile.jpg" media="(max-width: 768px)">
-      <source srcset="./assets/images/banner/bannerImage.jpg" media="(max-width: 1512px)">
-      <img src="./assets/images/banner/bannerImage.jpg" alt="Example Image">
-    </picture>
-
-    <!-- Header -->
     <header class="header">
       <nav class="navbar">
         <!-- Mobile Hamburger -->
@@ -82,6 +68,13 @@
         </div>
       </div>
     </header>
+    <!-- <picture>
+      <source srcset="./assets/images/banner/bannerImageMobile.jpg" media="(max-width: 768px)">
+      <source srcset="./assets/images/banner/bannerImage.jpg" media="(max-width: 1512px)">
+      <img src="./assets/images/banner/bannerImage.jpg" alt="Example Image">
+    </picture> -->
+
+    <!-- Header -->
   </section>
 
   <!-- Auto Scorlling Section -->
@@ -180,19 +173,49 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <ul>
-      <li class="test">1</li>
-      <li class="test">2</li>
-      <li class="test">3</li>
-      <li class="test">4</li>
-      <li class="test">5</li>
-      <li class="test">6</li>
-      <li class="test">7</li>
-      <li class="test">8</li>
-      <li class="test">9</li>
-      <li class="test">10</li>
-    </ul>
-  </footer>
+    <div class="footer-wraper">
+        <div class="footer-items">
+            <div class="subscription">
+                <h5>Subscribe To Our Newsletter</h5>
+                <div class="input-container">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="footer-social-icons">
+                    <img src="./assets//svg/insta.svg" alt="insta">
+                    <img src="./assets/svg/meta.svg" alt="meta">
+                    <img src="./assets//svg/twitter.svg" alt="twitter">
+                </div>
+            </div>
+            <div class="links">
+                <div class="quick-link">
+                    <h6>Quick Links</h6>
+
+                    <ul>
+                        <li><a class="text-n" href="#">Shop</a></li>
+                        <li><a class="text-n" href="#">Blogs</a></li>
+                        <li><a class="text-n" href="#">Category</a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a class="text-n" href="#">Contact Us</a></li>
+                        <li><a class="text-n" href="#">FAQs</a></li>
+                        <li><a class="text-n" href="#">Return Policy</a></li>
+                        <li><a class="text-n" href="#">Privacy Policy</a></li>
+                        <li><a class="text-n" href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="separator"></div>
+        <div class="footer-copy-right">
+            <div class="footer-logo"><img src="./assets/svg/logo_black.svg" alt="footer-logo"></div>
+            <div class="copy-right-text text-n">© 2025-2026 | All Rights Reserved</div>
+        </div>
+    </div>
+</footer>
 </body>
 
 <script src="./js/main.js"></script>

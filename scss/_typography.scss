@@ -21,7 +21,7 @@ h3,
 
 h4,
 .h4 {
-    @include fonts-update-heading(2rem, 2.25rem);  // issue in Style Guid of figma correct it and use 36px LH.
+    @include fonts-update-heading(2rem, 2.25rem); // issue in Style Guid of figma correct it and use 36px LH.
 }
 
 h5,
@@ -68,4 +68,71 @@ h6,
 
 .text-s-b {
     @include fonts-update-text($secondary-bold-font, 0.875rem, 1.25rem);
+}
+
+
+@media (max-width: $breakpoint-mobile) {
+
+    .h1-m {
+        @include fonts-update-heading(3.5rem, 3.875rem);
+    }
+
+
+    .h2-m {
+        @include fonts-update-heading(3rem, 3.25rem);
+    }
+
+
+    .h3-m {
+        @include fonts-update-heading(2.5rem, 2.75rem);
+    }
+
+
+    .h4-m {
+        @include fonts-update-heading(2rem, 2.25rem); // issue in Style Guid of figma correct it and use 36px LH.
+    }
+
+
+    .h5-m {
+        @include fonts-update-heading(1.5rem, 1.625rem);
+    }
+
+
+    .h6-m {
+        @include fonts-update-heading(1.25rem, 1.375rem);
+    }
+
+    .text-m-l {
+        @include fonts-update-text($secondary-font, 1.25rem, 1.75rem);
+    }
+    
+    .text-m-m {
+        @include fonts-update-text($secondary-font, 1.125rem, 1.625rem);
+    }
+    
+    .text-m-n {
+        @include fonts-update-text($secondary-font, 1rem, 1.375rem);
+    }
+    
+    .text-m-s {
+        @include fonts-update-text($secondary-font, 0.875rem, 1.25rem);
+    }
+    
+    // Text Bold
+    
+    .text-m-l-b {
+        @include fonts-update-text($secondary-bold-font, 1.25rem, 1.75rem);
+    }
+    
+    .text-m-m-b {
+        @include fonts-update-text($secondary-bold-font, 1.125rem, 1.625rem);
+    }
+    
+    .text-m-n-b {
+        @include fonts-update-text($secondary-bold-font, 1rem, 1.375rem);
+    }
+    
+    .text-m-s-b {
+        @include fonts-update-text($secondary-bold-font, 0.875rem, 1.25rem);
+    }
 }

@@ -1,5 +1,11 @@
 @use './variables' as *;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: $body-color;
 
@@ -10,6 +16,21 @@ body {
     .sub-container {
         margin: 0 60px;
         width: auto;
+
+        @media (max-width: $breakpoint-mobile) {
+            margin: 0 30px;
+        }
     }
 }
 
+button {
+    padding: 10px 26px;
+    background-color: transparent;
+    border: 1px solid $button-border-color;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.separator {
+    border-top: 2px solid $separator-border-color;
+}
