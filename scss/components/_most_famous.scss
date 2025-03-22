@@ -5,15 +5,24 @@
     width: 100%;
 
     .most-famous-text {
-        margin: 0 auto;
-        width: 50%;
+        display: flex;
+        justify-content: center;
         text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+        
+
     }
 
     .most-famous-tiles {
         display: flex;
         margin-top: 64px;
         gap: 40px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
         .tile {
             display: flex;
             flex-direction: column;
@@ -61,5 +70,34 @@
                 }
             }
         }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        .most-famous-text {
+            gap: 24px;
+        }
+
+        .most-famous-tiles {
+            gap: 20px;
+
+            .tile {
+                min-width: 272px;
+
+                .product-image {
+                    .hover-product-image {
+                        display: none;
+
+                    }
+    
+                    &:hover {
+                        .defult-product-image {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+        } 
+
     }
 }

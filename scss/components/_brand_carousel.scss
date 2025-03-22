@@ -1,11 +1,9 @@
-@use '../variables';
-
-
+@use '../variables' as *;
 
 .carousel-auto {
     padding: 55px 0;
     overflow: hidden;
-    
+
     .carousel-track {
         display: flex;
         width: 200%;
@@ -16,15 +14,51 @@
             list-style: none;
             display: flex;
             gap: 80px;
-        
+
             .carousel-image {
                 mix-blend-mode: multiply;
                 display: block;
                 width: 100%;
             }
-        
+
             margin-left: 80px;
         }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        .carousel-track {
+            animation: none;
+
+            .slides {
+                display: flex;
+                margin: 0;
+                padding: 0 30px;
+                gap: 30px;
+
+                li {
+                    width: 202px;
+                    height: 48px;
+                    scroll-snap-align: center;  
+                }
+            }
+
+            .carousel-image {
+                max-width: 202px;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .slides-clone {
+                display: none;
+            }
+        }
+
     }
 }
 

@@ -7,6 +7,7 @@
     max-width: 100%;
     overflow: hidden;
     background-image: url('/assets/images/banner/bannerImageMobile.jpg');
+    background-repeat: no-repeat;
     @media (min-width: $breakpoint-mobile) {
       height: 877px;
       background-image: url('/assets/images/banner/bannerImage.jpg');
