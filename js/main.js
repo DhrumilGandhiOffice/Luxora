@@ -1,6 +1,7 @@
 const handleHamburger = function () {
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileItem = document.querySelectorAll('.mobile-menu .mobile-link')
     const body = document.body;
 
     hamburger.addEventListener('click', (e) => {
@@ -13,14 +14,16 @@ const handleHamburger = function () {
         body.classList.toggle('menu-open');
     });
 
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('header') && mobileMenu.classList.contains('active')) {
-            // Close menu
-            hamburger.setAttribute('aria-expanded', 'false');
-            mobileMenu.classList.remove('active');
-            body.classList.remove('menu-open');
-        }
+    mobileItem.forEach(element => {
+        element.addEventListener('click', (e) => {
+            setTimeout(() => {
+                hamburger.setAttribute('aria-expanded', 'false');
+                mobileMenu.classList.remove('active');
+                body.classList.remove('menu-open');
+            },);
+        });
     });
+
 }
 
 const handleScroll = function () {
