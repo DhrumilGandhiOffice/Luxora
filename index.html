@@ -26,10 +26,10 @@
 
         <!-- Desktop Left Navigation (Hidden on Mobile) -->
         <ul class="nav-links">
-          <li><a class="text-m" href="#">Home</a></li>
-          <li><a class="text-m" href="#">About</a></li>
-          <li><a class="text-m" href="#">Blog</a></li>
-          <li><a class="text-m" href="#">Contact Us</a></li>
+          <li><a class="text-m" href="/">Home</a></li>
+          <li><a class="text-m" href="/index.html#about">About</a></li>
+          <li><a class="text-m" href="/index.html#blog">Blog</a></li>
+          <li><a class="text-m" href="#contact">Contact Us</a></li>
         </ul>
 
         <!-- Right Icons -->
@@ -53,18 +53,23 @@
       <div class="mobile-menu">
         <ul>
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a class="text-m h4-m" href="/">Home</a></li>
+            <li><a class="text-m h4-m" href="/index.html#about">About</a></li>
+            <li><a class="text-m h4-m" href="/index.html#blog">Blog</a></li>
+            <li><a class="text-m h4-m" href="#contact">Contact Us</a></li>
           </ul>
           <!-- Additional mobile-only items if needed -->
         </ul>
-        <div class="menu-footer">
-          <div class="search">
-
+        <div class="separator">
+          <div class="menu-footer">
+            <div class="search">
+              <p class="text-m">Search</p>
+            </div>
+            <p class="v-separator">|</p>
+            <div class="account">
+              <p class="text-m">Account</p>
+            </div>
           </div>
-          <div class="account"></div>
         </div>
       </div>
     </header>
@@ -175,7 +180,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="sub-container about">
+  <section id="about" class="sub-container about">
     <article class="about-text">
       <h3>About Luxora</h3>
       <div class="about-container">
@@ -233,7 +238,7 @@
   </section>
 
   <!-- Latest Journal -->
-  <section class="sub-container latest-journal">
+  <section id="blog" class="sub-container latest-journal">
     <article class="journal-text">
       <h3>Latest from our Journal</h3>
     </article>
@@ -270,7 +275,7 @@
   <footer class="footer">
     <div class="footer-wraper">
       <div class="footer-items">
-        <div class="subscription">
+        <div id="contact" class="subscription">
           <h5>Subscribe To Our Newsletter</h5>
           <div class="input-container">
             <input type="email" placeholder="Email">

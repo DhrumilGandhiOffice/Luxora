@@ -102,6 +102,38 @@ body {
 
         &.active {
             left: 0;
+            background-color: $body-color;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 60px 32px 26px;
+
+            .menu-footer {
+                margin-top: 1rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .search,
+                .account {
+                    display: flex;
+                    gap: 14px;
+                }
+
+                .search {
+                    &::before {
+                        content: url('../../assets/svg/search-mobile-header.svg');
+                    }
+                }
+
+                .account {
+                    &::before {
+                        content: url('../../assets/svg/account-mobile-header.svg');
+                    }
+                }
+                .v-separator {
+                    color: $separator-border-color;
+                } 
+            }
         }
 
         ul {
@@ -110,6 +142,7 @@ body {
 
             li {
                 margin: 2rem 0;
+                text-align: start;
 
                 a {
                     text-decoration: none;
