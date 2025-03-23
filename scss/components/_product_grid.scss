@@ -1,0 +1,52 @@
+.product-grid {
+    overflow: hidden;
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 40px;
+        grid-template-areas: "ts tc tl"
+                             "ts mm bl"
+                             "bs bc bl" ;
+
+        .grid-tile {
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .r1c1{
+            background-color: aqua;
+            grid-area: ts;
+        }
+        .r1c2 {
+            background-color: azure;
+            grid-area: tc;
+        }
+        .r1c3 {
+            background-color: blue;
+            grid-area: tl;
+        }
+
+        .r2c2 {
+            background-color: brown;
+            grid-area: mm;
+        }
+        .r3c1 {
+            background-color: aquamarine;
+            grid-area: bs;
+        }
+        .r3c2 {
+            background-color: chocolate;
+            grid-area: bc;
+        }
+        .r3c3 {
+            background-color: darkcyan;
+            grid-area: bl;
+            grid-column: 3/3;
+            grid-row: 2/3;
+        }
+    }
+
+    
+}

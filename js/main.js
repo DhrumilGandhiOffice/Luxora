@@ -21,15 +21,6 @@ const handleHamburger = function () {
             body.classList.remove('menu-open');
         }
     });
-
-    // Optional: Close menu on ESC key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
-            hamburger.setAttribute('aria-expanded', 'false');
-            mobileMenu.classList.remove('active');
-            body.classList.remove('menu-open');
-        }
-    });
 }
 
 const handleScroll = function () {

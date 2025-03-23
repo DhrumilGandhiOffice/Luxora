@@ -1,0 +1,66 @@
+@use '../variables' as *;
+
+.latest-journal {
+    padding-bottom: 60px;
+    .journal-text {
+        text-align: center;
+        margin: 64px auto 74px;
+    }
+
+    .journal-tiles {
+        display: flex;
+        justify-content: space-between;
+        // overflow: hidden;
+        gap: 46px;
+
+        .journal-tile {
+            .tile-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+
+                .tile-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .tile-text {
+                    h4 {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+
+        .journal-tiles {
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            gap: 18px;
+
+            .journal-tile {
+                .tile-wrap {
+                    gap: 24px;
+                    .tile-image {
+                        img {
+                            min-width: 274px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
