@@ -21,7 +21,7 @@
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
-        -ms-overflow-style: none;
+        justify-content: space-between;
 
         .tile {
             display: flex;

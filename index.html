@@ -10,260 +10,316 @@
 
 <body>
   <!-- Hero Section -->
-  <section class="hero">
-    <header class="header">
-      <nav class="navbar">
-        <!-- Mobile Hamburger -->
-        <button class="hamburger" aria-label="Menu" aria-expanded="false">
-          <img src="./assets/svg/humburger.svg" class="menu-icon" alt="Menu">
-          <img src="./assets/svg/close.svg" class="close-icon" alt="Close Menu">
-        </button>
+  <header class="header">
+    <nav class="navbar">
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <img src="./assets/svg/humburger.svg" class="menu-icon" alt="Menu">
+        <img src="./assets/svg/close.svg" class="close-icon" alt="Close Menu">
+      </button>
 
-        <!-- Logo (Centered) -->
-        <a href="/" class="logo">
-          <img src="./assets/svg/logo_black.svg" alt="Luxora">
-        </a>
+      <!-- Logo (Centered) -->
+      <a href="/" class="logo">
+        <img src="./assets/svg/logo_black.svg" alt="Luxora">
+      </a>
 
-        <!-- Desktop Left Navigation (Hidden on Mobile) -->
+      <!-- Desktop Left Navigation (Hidden on Mobile) -->
+      <ul class="nav-links">
+        <li><a class="text-m" href="/">Home</a></li>
+        <li><a class="text-m" href="/index.html#about">About</a></li>
+        <li><a class="text-m" href="/index.html#blog">Blog</a></li>
+        <li><a class="text-m" href="#contact">Contact Us</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="nav-icons">
+        <!-- Desktop: Search, Account, Bag -->
+        <div class="icons">
+          <a href="#" class="search-icon" aria-label="Search">
+            <img src="./assets/svg/search.svg" alt="">
+          </a>
+          <a href="#" class="account-icon" aria-label="Account">
+            <img src="./assets/svg/user.svg" alt="">
+          </a>
+          <a href="#" class="cart-icon" aria-label="Cart">
+            <img src="./assets/svg/cart.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <ul>
         <ul class="nav-links">
-          <li><a class="text-m" href="/">Home</a></li>
-          <li><a class="text-m" href="/index.html#about">About</a></li>
-          <li><a class="text-m" href="/index.html#blog">Blog</a></li>
-          <li><a class="text-m" href="#contact">Contact Us</a></li>
+          <li><a class="mobile-link text-m h4-m" href="/">Home</a></li>
+          <li><a class="mobile-link text-m h4-m" href="/index.html#about">About</a></li>
+          <li><a class="mobile-link text-m h4-m" href="/index.html#blog">Blog</a></li>
+          <li><a class="mobile-link text-m h4-m" href="#contact">Contact Us</a></li>
         </ul>
-
-        <!-- Right Icons -->
-        <div class="nav-icons">
-          <!-- Desktop: Search, Account, Bag -->
-          <div class="icons">
-            <a href="#" class="search-icon" aria-label="Search">
-              <img src="./assets/svg/search.svg" alt="">
-            </a>
-            <a href="#" class="account-icon" aria-label="Account">
-              <img src="./assets/svg/user.svg" alt="">
-            </a>
-            <a href="#" class="cart-icon" aria-label="Cart">
-              <img src="./assets/svg/cart.svg" alt="">
-            </a>
+        <!-- Additional mobile-only items if needed -->
+      </ul>
+      <div class="separator">
+        <div class="menu-footer">
+          <div class="search">
+            <p class="text-m">Search</p>
+          </div>
+          <p class="v-separator">|</p>
+          <div class="account">
+            <p class="text-m">Account</p>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </header>
 
-      <!-- Mobile Menu Overlay -->
-      <div class="mobile-menu">
-        <ul>
-          <ul class="nav-links">
-            <li><a class="mobile-link text-m h4-m" href="/">Home</a></li>
-            <li><a class="mobile-link text-m h4-m" href="/index.html#about">About</a></li>
-            <li><a class="mobile-link text-m h4-m" href="/index.html#blog">Blog</a></li>
-            <li><a class="mobile-link text-m h4-m" href="#contact">Contact Us</a></li>
-          </ul>
-          <!-- Additional mobile-only items if needed -->
+  <div class="main-container">
+
+    <section class="hero">
+    </section>
+
+    <!-- Auto Scorlling Section -->
+    <section class="carousel-auto">
+      <div class="carousel-track">
+        <ul class="slides">
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-1.png" alt="logo-1">
+          </li>
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-2.png" alt="logo-2">
+          </li>
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-3.png" alt="logo-3">
+          </li>
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-4.png" alt="logo-4">
+          </li>
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-5.png" alt="logo-5">
+          </li>
         </ul>
-        <div class="separator">
-          <div class="menu-footer">
-            <div class="search">
-              <p class="text-m">Search</p>
+        <ul class="slides-clone">
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-1.png" alt="logo-1">
+          </li>
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-2.png" alt="logo-2">
+          </li>
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-3.png" alt="logo-3">
+          </li>
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-4.png" alt="logo-4">
+          </li>
+          <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-5.png" alt="logo-5">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Most Famoous Section -->
+    <section class="sub-container most-famous">
+      <article class="most-famous-text">
+        <p class="text-m text-m-n">Featured Collection</p>
+        <div>
+          <h3 class="h4-m">The Afterglow Collection</h3>
+        </div>
+      </article>
+      <div class="most-famous-tiles">
+        <div class="tile">
+          <div class="product-image">
+            <img class="defult-product-image" src="./assets/images/famous/famous-1.jpg" alt="famous-product-1">
+            <img class="hover-product-image" src="./assets/images/famous/famous-1-h.jpg" alt="famous-product-1">
+          </div>
+          <div class="product-info">
+            <p class="brand-name text-s">TFG</p>
+            <div class="product-detail">
+              <p class="text-n">Formal Trouser</p>
+              <p class="text-n">$199</p>
             </div>
-            <p class="v-separator">|</p>
-            <div class="account">
-              <p class="text-m">Account</p>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="product-image">
+            <img class="defult-product-image" src="./assets/images/famous/famous-2.jpg" alt="famous-product-2">
+            <img class="hover-product-image" src="./assets/images/famous/famous-2-h.jpg" alt="famous-product-2">
+          </div>
+          <div class="product-info">
+            <p class="brand-name text-s">TFG</p>
+            <div class="product-detail">
+              <p class="text-n">Jacket</p>
+              <p class="text-n">$299</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="product-image">
+            <img class="defult-product-image" src="./assets/images/famous/famous-3.jpg" alt="famous-product-3">
+            <img class="hover-product-image" src="./assets/images/famous/famous-3-h.jpg" alt="famous-product-3">
+          </div>
+          <div class="product-info">
+            <p class="brand-name text-s">TFG</p>
+            <div class="product-detail">
+              <p class="text-n">Tops</p>
+              <p class="text-n">$149</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="product-image">
+            <img class="defult-product-image" src="./assets/images/famous/famous-4.jpg" alt="famous-product-4">
+            <img class="hover-product-image" src="./assets/images/famous/famous-4-h.jpg" alt="famous-product-4">
+          </div>
+          <div class="product-info">
+            <p class="brand-name text-s">TFG</p>
+            <div class="product-detail">
+              <p class="text-n">Knitted Top</p>
+              <p class="text-n">$299</p>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- Header -->
-  </section>
+    </section>
 
-  <!-- Auto Scorlling Section -->
-  <section class="carousel-auto">
-    <div class="carousel-track">
-      <ul class="slides">
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-1.png" alt="logo-1">
-        </li>
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-2.png" alt="logo-2">
-        </li>
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-3.png" alt="logo-3">
-        </li>
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-4.png" alt="logo-4">
-        </li>
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-5.png" alt="logo-5">
-        </li>
-      </ul>
-      <ul class="slides-clone">
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-1.png" alt="logo-1">
-        </li>
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-2.png" alt="logo-2">
-        </li>
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-3.png" alt="logo-3">
-        </li>
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-4.png" alt="logo-4">
-        </li>
-        <li><img class="slide carousel-image" src="./assets/images/brandCarousel/carousel-image-5.png" alt="logo-5">
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Most Famoous Section -->
-  <section class="sub-container most-famous">
-    <article class="most-famous-text">
-      <p class="text-m text-m-n">Featured Collection</p>
-      <div>
-        <h3 class="h4-m">The Afterglow Collection</h3>
-      </div>
-    </article>
-    <div class="most-famous-tiles">
-      <div class="tile">
-        <div class="product-image">
-          <img class="defult-product-image" src="./assets/images/famous/famous-1.jpg" alt="famous-product-1">
-          <img class="hover-product-image" src="./assets/images/famous/famous-1-h.jpg" alt="famous-product-1">
+    <!-- About Section -->
+    <section id="about" class="sub-container about">
+      <article class="about-text">
+        <h3>About Luxora</h3>
+        <div class="about-container">
+          <div class="about-image">
+            <picture>
+              <source srcset="./assets/images/about/about_m.jpg" media="(max-width: 768px)">
+              <source srcset="./assets/images/about/about.jpg" media="(max-width: 1512px)">
+              <img src="./assets/images/about/about.jpg" alt="Example Image">
+            </picture>
+          </div>
+          <div class="about-data">
+            <p class="text-n">At Luxora, we believe that fashion is more than just clothing – it’s a way to express your
+              unique story. Our brand is built on the values of elegance, comfort, and individuality, creating timeless
+              pieces that resonate with your lifestyle.Each Luxora design is crafted with meticulous attention to
+              detail,
+              blending premium fabrics with contemporary styles to ensure you feel confident and stylish. Whether you're
+              dressing up for a special occasion or embracing everyday chic, Luxora offers versatile collections that
+              celebrate your personal style.</p>
+          </div>
         </div>
-        <div class="product-info">
-          <p class="brand-name text-s">TFG</p>
-          <div class="product-detail">
-            <p class="text-n">Formal Trouser</p>
-            <p class="text-n">$199</p>
+      </article>
+    </section>
+
+    <!-- video Section -->
+    <section class="video">
+      <div class="image">
+        <picture>
+          <source srcset="./assets/images/video/video-m.jpg" media="(max-width: 768px)">
+          <source srcset="./assets/images/video/video.jpg media=" (max-width: 1512px)">
+          <img style="width: 100%;" src="./assets/images/video/video.jpg" alt="Example Image">
+        </picture>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="sub-container product-grid">
+      <div class="grid-container">
+        <div class="col r2c1">
+          <div class="grid-tile r1c1">
+            <picture>
+              <source srcset="./assets/images/productGrid/r1c1-m.jpg" media="(max-width: 768px)">
+              <source srcset="./assets/images/productGrid/grid-r1-c1.jpg" media="(max-width: 1512px)">
+              <img class="grid-img normal" src="./assets/images/productGrid/grid-r1-c1.jpg" alt="Example Image">
+            </picture>
+            <img class="grid-img hover" src="/assets/images/productGrid/r1c1-h.jpg" alt="White Dress" />
+          </div>
+          <div class="grid-tile r3c1">
+            <picture>
+              <source srcset="./assets/images/productGrid/r3c1-m.jpg" media="(max-width: 768px)">
+              <source srcset="./assets/images/productGrid/grid-r3-c1.jpg" media="(max-width: 1512px)">
+              <img class="grid-img normal" src="./assets/images/productGrid/grid-r3-c1.jpg" alt="Example Image">
+            </picture>
+            <img class="grid-img hover" src="/assets/images/productGrid/r3c1-h.jpg" alt="White Dress" />
+          </div>
+        </div>
+        <div class="col r3c1">
+          <div class="grid-tile r1c2">
+            <picture>
+              <source srcset="./assets/images/productGrid/r1c2-m.jpg" media="(max-width: 768px)">
+              <source srcset="./assets/images/productGrid/grid-r1-c2.jpg" media="(max-width: 1512px)">
+              <img class="grid-img normal" src="./assets/images/productGrid/grid-r1-c2.jpg" alt="Example Image">
+            </picture>
+            <img class="grid-img hover" src="/assets/images/productGrid/r1c2-h.jpg" alt="Shiny Top" />
+          </div>
+          <div class="grid-tile r2c2">
+            <picture>
+              <source srcset="./assets/images/productGrid/r2c2-m.jpg" media="(max-width: 768px)">
+              <source srcset="./assets/images/productGrid/grid-r2-c2.jpg" media="(max-width: 1512px)">
+              <img class="grid-img normal" src="./assets/images/productGrid/grid-r2-c2.jpg" alt="Example Image">
+            </picture>
+            <img class="grid-img hover" src="/assets/images/productGrid/r2c2-h.jpg" alt="Shiny Top" />
+          </div>
+          <div class="grid-tile r3c2">
+            <picture>
+              <source srcset="./assets/images/productGrid/r3c2-m.jpg" media="(max-width: 768px)">
+              <source srcset="./assets/images/productGrid/grid-r3-c2.jpg" media="(max-width: 1512px)">
+              <img class="grid-img normal" src="./assets/images/productGrid/grid-r3-c2.jpg" alt="Example Image">
+            </picture>
+            <img class="grid-img hover" src="/assets/images/productGrid/r3c2-h.jpg" alt="Shiny Top" />
+          </div>
+        </div>
+        <div class="col r2c1">
+          <div class="grid-tile r1c3">
+            <picture>
+              <source srcset="./assets/images/productGrid/r1c3-m.jpg" media="(max-width: 768px)">
+              <source srcset="./assets/images/productGrid/grid-r1-c3.jpg" media="(max-width: 1512px)">
+              <img class="grid-img normal" src="./assets/images/productGrid/grid-r1-c3.jpg" alt="Example Image">
+            </picture>
+            <img class="grid-img hover" src="/assets/images/productGrid/r1c3-h.jpg" alt="Shiny Top" />
+          </div>
+          <div class="grid-tile r3c3">
+            <picture>
+              <source srcset="./assets/images/productGrid/r3c3-m.jpg" media="(max-width: 768px)">
+              <source srcset="./assets/images/productGrid/grid-r3-c3.jpg" media="(max-width: 1512px)">
+              <img class="grid-img normal" src="./assets/images/productGrid/grid-r3-c3.jpg" alt="Example Image">
+            </picture>
+            <img class="grid-img hover" src="/assets/images/productGrid/r3c3-h.jpg" alt="Denim Back" />
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="tile">
-        <div class="product-image">
-          <img class="defult-product-image" src="./assets/images/famous/famous-2.jpg" alt="famous-product-2">
-          <img class="hover-product-image" src="./assets/images/famous/famous-2-h.jpg" alt="famous-product-2">
+    <!-- Latest Journal -->
+    <section id="blog" class="sub-container latest-journal">
+      <article class="journal-text">
+        <h3>Latest from our Journal</h3>
+      </article>
+
+      <div class="journal-tiles">
+        <div class="journal-tile">
+          <div class="tile-wrap">
+            <div class="tile-image">
+              <img src="./assets/images/journals/journal-1.jpg" alt="journal-1">
+            </div>
+            <div class="tile-text">
+              <h4 class="h6-m">Elevate Your Wardrobe: Mu...</h4>
+            </div>
+          </div>
         </div>
-        <div class="product-info">
-          <p class="brand-name text-s">TFG</p>
-          <div class="product-detail">
-            <p class="text-n">Jacket</p>
-            <p class="text-n">$299</p>
+        <div class="journal-tile">
+          <div class="tile-wrap">
+            <div class="tile-image">
+              <img src="./assets/images/journals/journal-2.jpg" alt="journal-1">
+            </div>
+            <div class="tile-text">
+              <h4 class="h6-m">The Art of Layering: Tips to...</h4>
+            </div>
+          </div>
+        </div>
+        <div class="journal-tile">
+          <div class="tile-wrap">
+            <div class="tile-image">
+              <img src="./assets/images/journals/journal-3.jpg" alt="journal-1">
+            </div>
+            <div class="tile-text">
+              <h4 class="h6-m">Behind the Seams: The Stor...</h4>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="tile">
-        <div class="product-image">
-          <img class="defult-product-image" src="./assets/images/famous/famous-3.jpg" alt="famous-product-3">
-          <img class="hover-product-image" src="./assets/images/famous/famous-3-h.jpg" alt="famous-product-3">
-        </div>
-        <div class="product-info">
-          <p class="brand-name text-s">TFG</p>
-          <div class="product-detail">
-            <p class="text-n">Tops</p>
-            <p class="text-n">$149</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="product-image">
-          <img class="defult-product-image" src="./assets/images/famous/famous-4.jpg" alt="famous-product-4">
-          <img class="hover-product-image" src="./assets/images/famous/famous-4-h.jpg" alt="famous-product-4">
-        </div>
-        <div class="product-info">
-          <p class="brand-name text-s">TFG</p>
-          <div class="product-detail">
-            <p class="text-n">Knitted Top</p>
-            <p class="text-n">$299</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="sub-container about">
-    <article class="about-text">
-      <h3>About Luxora</h3>
-      <div class="about-container">
-        <div class="about-image">
-          <picture>
-            <source srcset="./assets/images/about/about_m.jpg" media="(max-width: 768px)">
-            <source srcset="./assets/images/about/about.jpg" media="(max-width: 1512px)">
-            <img src="./assets/images/about/about.jpg" alt="Example Image">
-          </picture>
-        </div>
-        <div class="about-data">
-          <p class="text-n">At Luxora, we believe that fashion is more than just clothing – it’s a way to express your unique story. Our brand is built on the values of elegance, comfort, and individuality, creating timeless pieces that resonate with your lifestyle.Each Luxora design is crafted with meticulous attention to detail, blending premium fabrics with contemporary styles to ensure you feel confident and stylish. Whether you're dressing up for a special occasion or embracing everyday chic, Luxora offers versatile collections that celebrate your personal style.</p>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <!-- video Section -->
-  <section class="video">
-    <div class="image">
-      <picture>
-        <source srcset="./assets/images/video/video-m.jpg" media="(max-width: 768px)">
-        <source srcset="./assets/images/video/video.jpg media="(max-width: 1512px)">
-        <img style="width: 100%;" src="./assets/images/video/video.jpg" alt="Example Image">
-      </picture>
-    </div>
-  </section>
-
-  <!-- Products Grid -->
-  <section class="sub-container product-grid">
-    <!-- <div class="fashion-grid">
-      <img class="col-1" src="/assets/images/productGrid/grid-r1-c1.jpg" alt="White Dress" class="grid-item" />
-      <img class="col-2" src="/assets/images/productGrid/grid-r1-c2.jpg" alt="Shiny Top" class="grid-item" />
-      <img class="col-3" src="/assets/images/productGrid/grid-r1-c3.jpg" alt="Blue Dress" class="grid-item" />
-
-
-      <div class="grid-item center">
-        <img class="col-2" src="/assets/images/productGrid/grid-r2-c2.jpg" alt="Black Skirt" />
-      </div>
-
-      <img class="col-1" src="/assets/images/productGrid/grid-r3-c1.jpg" alt="Jacket" class="grid-item" />
-      <img class="col-2" src="/assets/images/productGrid/grid-r3-c2.jpg" alt="Wide Pants" class="grid-item" />
-      <img class="col-3" src="/assets/images/productGrid/grid-r3-c3.jpg" alt="Denim Back" class="grid-item" />
-    </div> -->
-
-    <div class="grid-container">
-      <div class="grid-tile r1c1">1</div>
-      <div class="grid-tile r1c2">2</div>
-      <div class="grid-tile r1c3">3</div>
-      <div class="grid-tile r2c2">4</div>
-      <div class="grid-tile r3c1">5</div>
-      <div class="grid-tile r3c2">6</div>
-      <div class="grid-tile r3c3">7</div>
-    </div>
-  </section>
-
-  <!-- Latest Journal -->
-  <section id="blog" class="sub-container latest-journal">
-    <article class="journal-text">
-      <h3>Latest from our Journal</h3>
-    </article>
-
-    <div class="journal-tiles">
-      <div class="journal-tile">
-        <div class="tile-wrap">
-          <div class="tile-image">
-            <img src="./assets/images/journals/journal-1.jpg" alt="journal-1">
-          </div>
-          <div class="tile-text"><h4 class="h6-m">Elevate Your Wardrobe: Mu...</h4></div>
-        </div>
-      </div>
-      <div class="journal-tile">
-        <div class="tile-wrap">
-          <div class="tile-image">
-            <img src="./assets/images/journals/journal-2.jpg" alt="journal-1">
-          </div>
-          <div class="tile-text"><h4 class="h6-m">The Art of Layering:  Tips to...</h4></div>
-        </div>
-      </div>
-      <div class="journal-tile">
-        <div class="tile-wrap">
-          <div class="tile-image">
-            <img src="./assets/images/journals/journal-3.jpg" alt="journal-1">
-          </div>
-          <div class="tile-text"><h4 class="h6-m">Behind the Seams: The Stor...</h4></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">

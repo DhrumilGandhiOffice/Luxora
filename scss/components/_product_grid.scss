@@ -1,52 +1,84 @@
+@use '../variables' as *;
+
 .product-grid {
     overflow: hidden;
+    padding-top: 106px;
+
     .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto;
+        display: flex;
+        justify-content: space-between;
         gap: 40px;
-        grid-template-areas: "ts tc tl"
-                             "ts mm bl"
-                             "bs bc bl" ;
 
-        .grid-tile {
-            height: 200px;
-            width: 200px;
-            text-align: center;
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 40px;
+
+            .grid-tile {
+                position: relative;
+
+                .grid-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                    &.r2c1 {
+                        max-width: 436px;
+                        max-height: 720px;
+                    }
+
+                    &.r3c1 {
+                        max-width: 438px;
+                        max-height: 467px;
+                    }
+
+                    &.hover {
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        &.hover {
+                            opacity: 1;
+                        }
+                        &.normal {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
         }
 
-        .r1c1{
-            background-color: aqua;
-            grid-area: ts;
-        }
-        .r1c2 {
-            background-color: azure;
-            grid-area: tc;
-        }
-        .r1c3 {
-            background-color: blue;
-            grid-area: tl;
-        }
+        @media (max-width: $breakpoint-mobile) { 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .col {
+                .grid-tile {
+                    max-width: 333px;
+                    max-height: 395px;
+                    position: unset;
+                    .grid-img {
+                        width: 100%;
+                        height: 100%;
+                        object-position: top;
+                        object-fit: cover;
 
-        .r2c2 {
-            background-color: brown;
-            grid-area: mm;
-        }
-        .r3c1 {
-            background-color: aquamarine;
-            grid-area: bs;
-        }
-        .r3c2 {
-            background-color: chocolate;
-            grid-area: bc;
-        }
-        .r3c3 {
-            background-color: darkcyan;
-            grid-area: bl;
-            grid-column: 3/3;
-            grid-row: 2/3;
-        }
+                        &.normal {
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+        } 
     }
-
-    
 }

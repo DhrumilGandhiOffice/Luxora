@@ -16,11 +16,9 @@ const handleHamburger = function () {
 
     mobileItem.forEach(element => {
         element.addEventListener('click', (e) => {
-            setTimeout(() => {
-                hamburger.setAttribute('aria-expanded', 'false');
-                mobileMenu.classList.remove('active');
-                body.classList.remove('menu-open');
-            },);
+            hamburger.setAttribute('aria-expanded', 'false');
+            mobileMenu.classList.remove('active');
+            body.classList.remove('menu-open');
         });
     });
 
