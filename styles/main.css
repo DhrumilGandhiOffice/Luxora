@@ -371,10 +371,10 @@ body.menu-open {
   gap: 14px;
 }
 .header .mobile-menu.active .menu-footer .search::before {
-  content: url("../../assets/svg/search-mobile-header.svg");
+  content: url("../assets/svg/search-mobile-header.svg");
 }
 .header .mobile-menu.active .menu-footer .account::before {
-  content: url("../../assets/svg/account-mobile-header.svg");
+  content: url("../assets/svg/account-mobile-header.svg");
 }
 .header .mobile-menu.active .menu-footer .v-separator {
   color: #c9c9c9;
@@ -427,7 +427,6 @@ body.menu-open {
   max-width: 100%;
   overflow: hidden;
   background-image: url("../assets/images/banner/bannerImage.jpg");
-  background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
 }

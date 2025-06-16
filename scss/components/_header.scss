@@ -121,13 +121,13 @@ body {
 
                 .search {
                     &::before {
-                        content: url('../../assets/svg/search-mobile-header.svg');
+                        content: url('../assets/svg/search-mobile-header.svg');
                     }
                 }
 
                 .account {
                     &::before {
-                        content: url('../../assets/svg/account-mobile-header.svg');
+                        content: url('../assets/svg/account-mobile-header.svg');
                     }
                 }
                 .v-separator {
