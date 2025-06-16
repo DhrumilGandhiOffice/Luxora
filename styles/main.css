@@ -427,8 +427,10 @@ body.menu-open {
   max-width: 100%;
   overflow: hidden;
   background-image: url("../assets/images/banner/bannerImage.jpg");
+  background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
+  background-size: cover;
 }
 @media (min-width: 830px) {
   .hero {
@@ -528,6 +530,7 @@ body.menu-open {
 .most-famous .most-famous-tiles .tile {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .most-famous .most-famous-tiles .tile .product-image {
   position: relative;
@@ -629,6 +632,7 @@ body.menu-open {
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
+  width: 100%;
 }
 .product-grid .grid-container .col .grid-tile {
   position: relative;
@@ -697,11 +701,17 @@ body.menu-open {
   justify-content: space-between;
   gap: 46px;
 }
+.latest-journal .journal-tiles .journal-tile {
+  width: 100%;
+}
 .latest-journal .journal-tiles .journal-tile .tile-wrap {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
+}
+.latest-journal .journal-tiles .journal-tile .tile-wrap .tile-image {
+  width: 100%;
 }
 .latest-journal .journal-tiles .journal-tile .tile-wrap .tile-image img {
   width: 100%;
@@ -852,13 +862,14 @@ body.menu-open {
 }
 .fade-in.active {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translateY(0);
 }
 @media (min-width: 830px) {
   .fade-in {
     opacity: 0;
-    transform: translate(50px, 50px);
-    transition: opacity 0.5s ease-out, transform 1s ease-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    transform: translateY(60px);
+    transition: transform 0.6s ease-in, opacity 0.9s ease-in;
   }
 }
 

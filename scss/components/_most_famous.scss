@@ -26,6 +26,7 @@
         .tile {
             display: flex;
             flex-direction: column;
+            width: 100%;
             .product-image {
                 position: relative;
                 overflow: hidden;

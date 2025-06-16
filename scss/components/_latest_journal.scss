@@ -14,6 +14,7 @@
         gap: 46px;
 
         .journal-tile {
+            width: 100%;
             .tile-wrap {
                 display: flex;
                 flex-direction: column;
@@ -21,6 +22,7 @@
                 align-items: center;
 
                 .tile-image {
+                    width: 100%;
                     img {
                         width: 100%;
                     }
