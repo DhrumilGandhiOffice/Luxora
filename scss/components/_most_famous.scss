@@ -4,6 +4,10 @@
     padding: 46px 0;
     width: 100%;
 
+    &.sub-container {
+        margin-right: 0;
+    }
+
     .most-famous-text {
         display: flex;
         justify-content: center;

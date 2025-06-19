@@ -122,6 +122,15 @@
 
                 .latest-news-info {
                     margin: auto 0;
+                    h5 {
+                        margin-top: 12px;
+                        @media (max-width: $breakpoint-mobile) {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+
+                   
                 }
 
                 .date {

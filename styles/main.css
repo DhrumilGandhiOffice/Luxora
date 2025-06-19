@@ -511,6 +511,9 @@ body.menu-open {
   padding: 46px 0;
   width: 100%;
 }
+.most-famous.sub-container {
+  margin-right: 0;
+}
 .most-famous .most-famous-text {
   display: flex;
   justify-content: center;
@@ -671,6 +674,9 @@ body.menu-open {
     align-items: center;
     justify-content: center;
   }
+  .product-grid .grid-container .col {
+    align-items: center;
+  }
   .product-grid .grid-container .col .grid-tile {
     max-width: 333px;
     max-height: 395px;
@@ -692,6 +698,9 @@ body.menu-open {
 
 .latest-journal {
   padding-bottom: 60px;
+}
+.latest-journal.sub-container {
+  margin-right: 0;
 }
 .latest-journal .journal-text {
   text-align: center;
@@ -844,6 +853,15 @@ body.menu-open {
 }
 .blog-section .blog-latest-news .latest-news-tiles .latest-news-tile .latest-news-info {
   margin: auto 0;
+}
+.blog-section .blog-latest-news .latest-news-tiles .latest-news-tile .latest-news-info h5 {
+  margin-top: 12px;
+}
+@media (max-width: 830px) {
+  .blog-section .blog-latest-news .latest-news-tiles .latest-news-tile .latest-news-info h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .blog-section .blog-latest-news .latest-news-tiles .latest-news-tile .date {
   color: #999999;

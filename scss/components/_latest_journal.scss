@@ -2,6 +2,10 @@
 
 .latest-journal {
     padding-bottom: 60px;
+
+    &.sub-container {
+        margin-right: 0;
+    }
     .journal-text {
         text-align: center;
         margin: 64px auto 74px;
