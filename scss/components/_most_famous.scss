@@ -5,7 +5,9 @@
     width: 100%;
 
     &.sub-container {
-        margin-right: 0;
+        @media (max-width: $breakpoint-mobile) {
+            margin-right: 0;
+        }
     }
 
     .most-famous-text {

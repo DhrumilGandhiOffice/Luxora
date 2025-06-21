@@ -511,8 +511,10 @@ body.menu-open {
   padding: 46px 0;
   width: 100%;
 }
-.most-famous.sub-container {
-  margin-right: 0;
+@media (max-width: 830px) {
+  .most-famous.sub-container {
+    margin-right: 0;
+  }
 }
 .most-famous .most-famous-text {
   display: flex;
@@ -699,8 +701,10 @@ body.menu-open {
 .latest-journal {
   padding-bottom: 60px;
 }
-.latest-journal.sub-container {
-  margin-right: 0;
+@media (max-width: 830px) {
+  .latest-journal.sub-container {
+    margin-right: 0;
+  }
 }
 .latest-journal .journal-text {
   text-align: center;

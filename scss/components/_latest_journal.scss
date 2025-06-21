@@ -4,7 +4,9 @@
     padding-bottom: 60px;
 
     &.sub-container {
-        margin-right: 0;
+        @media (max-width: $breakpoint-mobile) {
+            margin-right: 0;
+        }
     }
     .journal-text {
         text-align: center;
